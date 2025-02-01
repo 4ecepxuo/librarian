@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 90%;
+            max-width: 800px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: clamp(2em, 5vw, 2.5em);
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: clamp(1em, 3vw, 1.2em);
+            color: #eee;
+            margin-bottom: 30px;
+        }
+
+        .shelf {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: clamp(1em, 3vw, 1.1em);
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .button:hover {
+            background: linear-gradient(135deg, #ff6b6b, #ffa07a);
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Добро пожаловать в библиотеку!</h1>
+    <p>Исследуйте широкий выбор книг и материалов. Все файлы доступны через Яндекс.Диск.</p>
+    <div class="shelf">
+        <a href="https://disk.yandex.kz/d/E6tMswLTDz5qcA" target="_blank" class="button">Научно-популярная литература</a>
+        <a href="https://disk.yandex.kz/d/StRel09hlWFSeQ" target="_blank" class="button">Художественная литература</a>
+        <a href="https://disk.yandex.kz/d/DHjshz1H4Rh7HQ" target="_blank" class="button">Справочная литература</a>
+        <a href="https://disk.yandex.kz/d/VEEbYFPOZNL_mQ" target="_blank" class="button">Документальная литература</a>
+        <a href="https://disk.yandex.kz/d/CvaQFQveeaW26Q" target="_blank" class="button">Учебная литература</a>
+        <a href="https://disk.yandex.kz/d/NamrO1WterQu2A" target="_blank" class="button">Музыкальная библиотека</a>
+    </div>
+</div>
+
+</body>
+</html>
